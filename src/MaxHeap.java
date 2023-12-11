@@ -85,6 +85,17 @@ public class MaxHeap <E extends Comparable<E>> implements Heap<E>{
         }
         System.out.println();
     }
+    public void printBeautifulTree() {
+        print("", 0, false);
+    }
+
+    private void print(String prefix, int index, boolean isRight) {
+        if (index < heap.size()) {
+            print(prefix + ("    "), 2 * index + 2, true);
+            System.out.println(prefix + ("    ") + heap.get(index));
+            print(prefix + ("    "), 2 * index + 1, false);
+        }
+    }
     public E remove(int index){
         if(index<0 || index>=size()){
             throw new IllegalStateException("Invalid index");

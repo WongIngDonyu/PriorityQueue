@@ -33,6 +33,10 @@ public class PriorityQueue<E extends Comparable<E>> implements AbstractQueue<E> 
     public void printQueue() {
         maxHeap.printHeap();
     }
+    public void printBeautifulQueue() {
+        maxHeap.printBeautifulTree();
+    }
+
 
     @Override
     public E remove(int index) {
