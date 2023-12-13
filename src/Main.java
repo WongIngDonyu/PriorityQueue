@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        MaxHeap<Integer> maxHeap = new MaxHeap<>();
+        MaxHeap2<Integer> maxHeap = new MaxHeap2<>();
 
         maxHeap.add(15);
         maxHeap.add(5);
@@ -8,7 +8,7 @@ public class Main {
         maxHeap.add(30);
         maxHeap.add(25);
         maxHeap.add(40);
-        maxHeap.printBeautifulTree();
+        maxHeap.printBeaty();
 
         System.out.println("Наивысший элемент: " + maxHeap.peek());
         System.out.println("Размер кучи: " + maxHeap.size());
